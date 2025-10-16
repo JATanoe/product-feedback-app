@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{ fragment/base :: global_header(~{::title},~{}) }">
+  <title>Feedback :: Update User</title>
+</head>
+<body>
+<div id="root">
+  <h1>Update User</h1>
+
+  <form th:action="@{/users/{id}/update(id=${user.id})}" th:object="${user}" method="post">
+    <input type="hidden" th:field="*{id}" />
+    <div>
+      <label for="fullName">Full Name</label>
+      <input id="fullName" type="text" th:field="*{fullName}" placeholder="Enter your full name">
+    </div>
+
+    <div>
+      <label for="username">Username</label>
+      <input id="username" type="text" th:field="*{username}" placeholder="Enter your username"/>
+    </div>
+
+    <div>
+      <label for="email">Email</label>
+      <input id="email" type="email" th:field="*{email}" placeholder="Enter your email"/>
+    </div>
+
+    <div>
+      <label for="bio">Bio</label>
+      <textarea id="bio" th:field="*{bio}" placeholder="Write a small bio"></textarea>
+    </div>
+
+    <div>
+      <button type="submit">Save Changes</button>
+      <a th:href="@{/users}">Back to list</a>
+    </div>
+  </form>
+</div>
+</body>
+</html>

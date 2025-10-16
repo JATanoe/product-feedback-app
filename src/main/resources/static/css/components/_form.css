@@ -1,0 +1,11 @@
+form {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-row-gap: 1rem;
+
+    div {
+        display: grid;
+        grid-auto-rows: auto;
+        grid-row-gap: calc(var(--spacing) * 2);
+    }
+}

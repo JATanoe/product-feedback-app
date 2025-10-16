@@ -1,0 +1,18 @@
+<head th:fragment="global_header(title,links)" xmlns:th="http://www.thymeleaf.org">
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title th:replace="${title}">Page Title</title>
+
+  <!-- Common styles and scripts -->
+  <link rel="preconnect" href="https://api.fonts.coollabs.io">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://api.fonts.coollabs.io/css2?family=Jost:ital,wght@0,100..900;1,100.900&display=swap"
+        rel="stylesheet">
+  <link rel="shortcut icon" th:href="@{/images/favicon.ico}">
+  <link rel="stylesheet" type="text/css" media="all" th:href="@{/css/styles.css}">
+  <script type="text/javascript" th:src="@{/sh/scripts/codebase.js}"></script>
+
+  <!--/* Per-page placeholder for additional links */-->
+  <th:block th:replace="${links}"/>
+</head>

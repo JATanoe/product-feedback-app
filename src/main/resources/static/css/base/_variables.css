@@ -1,0 +1,86 @@
+:root {
+    /* Colors */
+    --color-purple-800: hsl(282, 83%, 52%); /* #AD1FEA - RGB 173, 31, 234 - HSL 282°, 83%, 52% */
+    --color-blue-800: hsl(230, 76%, 59%);   /* #4661E6 - RGB 70, 97, 230 - HSL 230°, 76%, 59% */
+    --color-gray-900: hsl(230, 31%, 31%);   /* #373F68 - RGB 55, 63, 104 - HSL 230°, 31%, 31% */
+    --color-base-100: hsl(0, 0%, 100%);     /* #FFFFFF - RGB 255, 255, 255 - HSL 0°, 0%, 100% */
+    --color-slate-100: hsl(231, 100%, 97%); /* #F2F4FF - RGB 242, 244, 255 - HSL 231°, 100%, 97% */
+    --color-gray-100: hsl(230, 60%, 98%);   /* #F7F8FD - RGB 247, 248, 253 - HSL 230°, 60%, 98% */
+    --color-slate-900: hsl(231, 33%, 34%);  /* #3A4374 - RGB 58, 67, 116 - HSL 231°, 33%, 34% */
+    --color-gray-700: hsl(224, 20%, 49%);   /* #647196 - RGB 100, 113, 150 - HSL 224°, 20%, 49% */
+    --color-orange-400: hsl(14, 83%, 74%);  /* #F49F85 - RGB 244, 159, 133 - HSL 14°, 83%, 74% */
+    --color-blue-400: hsl(204, 94%, 68%);   /* #62BCFA - RGB 98, 188, 250 - HSL 204°, 94%, 68% */
+    --color-red-800: hsl(0, 67%, 53%);      /* #D73737 - RGB 215, 55, 55 - HSL 0, 67%, 53% */
+
+    /* Typography */
+    /*
+      <link rel="preconnect" href="https://api.fonts.coollabs.io">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://api.fonts.coollabs.io/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+   */
+
+    /* Font family */
+    --font-sans: "Jost", sans-serif;
+
+    /* Heading1 - Jost Bold     |  24px; 35px Line; -0.33 Spacing | text-xl */
+    --font-2xl: bold 24px/35px var(--font-sans);
+    --text-2xl: calc(var(--spacing) * 6);
+    --text-2xl--line: calc(var(--spacing) * 8.75);
+    --text-2xl--spacing: -0.33;
+    /* Heading2 - Jost Bold     |  20px; 29px Line; -0.25 Spacing | text-lg */
+    --font-xl: bold 20px/29px var(--font-sans);
+    --text-xl: calc(var(--spacing) * 5);
+    --text-xl--line: calc(var(--spacing) * 7.25);
+    --text-xl--spacing: -0.25;
+    /* Heading3 - Jost Bold     |  18px; 26px Line; -0.25 Spacing | text-md */
+    --font-lg: bold 18px/26px var(--font-sans);
+    --text-lg: calc(var(--spacing) * 4.5);
+    --text-lg--line: calc(var(--spacing) * 7.25);
+    --text-lg--spacing: -0.25;
+    /* Body 1   - Jost Regular  |  16px; 23px Line;  0    Spacing | text-base */
+    --font-base: bold 16px/23px var(--font-sans);
+    --text-base: calc(var(--spacing) * 4);
+    --text-base--line: calc(var(--spacing) * 5.75);
+    --text-base--spacing: 0;
+    /* Body 2   - Jost Regular  |  15px; 22px Line;  0    Spacing | text-sm */
+    font: bold 16px/1.5 var(--font-sans);
+    /* Heading4 - Jost Bold     |  14px; 20px Line; -0.2  Spacing | text-xs */
+    font: bold 16px/1.5 var(--font-sans);
+    /* Body 3   - Jost Semibold |  13px; 19px Line;  0    Spacing | text-2xs */
+    font: bold 16px/1.5 var(--font-sans);
+
+    /* Font Size */
+    --fs-800: calc(var(--spacing) * 6);     /* 24px */
+    --fs-700: calc(var(--spacing) * 6.5);   /* 22px */
+    --fs-600: calc(var(--spacing) * 5);     /* 20px */
+    --fs-500: calc(var(--spacing) * 4.5);   /* 18px */
+    --fs-400: calc(var(--spacing) * 4);     /* 16px */
+    --fs-300: calc(var(--spacing) * 3.75);  /* 15px */
+    --fs-200: calc(var(--spacing) * 3.5);   /* 14px */
+    --fs-100: calc(var(--spacing) * 3.25);  /* 13px */
+
+    /* Line Height */
+    --lh-700: calc(var(--spacing) * 8.75);  /* 35px Line */
+    --lh-600: calc(var(--spacing) * 7.25);  /* 29px Line */
+    --lh-500: calc(var(--spacing) * 6.5);   /* 26px Line */
+    --lh-400: calc(var(--spacing) * 5.75);  /* 23px Line */
+    --lh-300: calc(var(--spacing) * 5.5);   /* 22px Line */
+    --lh-200: calc(var(--spacing) * 5);     /* 20px Line */
+    --lh-100: calc(var(--spacing) * 4.75);  /* 19px Line */
+
+    /* Font Weight */
+    --font-bold: 700;
+    --font-semibold: 600;
+    --font-medium: 500;
+    --font-regular: 400;
+    --font-light: 300;
+
+    /* Letter Spacing */
+    --ls-400: -0.33px;
+    --ls-300: -0.25px;
+    --ls-200: -0.2px;
+    --ls-100: -0.18px;
+
+    /* Spacing */
+    --spacing: 0.25rem;
+}

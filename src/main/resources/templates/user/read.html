@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{ fragment/base :: global_header(~{::title},~{}) }">
+  <title>Feedback :: View User</title>
+</head>
+<body>
+<div id="root">
+  <h1>User Details</h1>
+  <div th:if="${user != null}">
+    <p><strong>Full Name:</strong> <span th:text="${user.fullName}"></span></p>
+    <p><strong>Username:</strong> <span th:text="${user.username}"></span></p>
+    <p><strong>Email:</strong> <span th:text="${user.email}"></span></p>
+    <p><strong>Bio:</strong> <span th:text="${user.bio}"></span></p>
+
+    <p>
+      <a th:href="@{/users/{id}/update(id=${user.id})}">Edit</a>
+      <a th:href="@{/users/{id}/delete(id=${user.id})}">Delete</a>
+      <a th:href="@{/users}">Back to list</a>
+    </p>
+  </div>
+  <div th:if="${user == null}">
+    <p>User not found.</p>
+    <a th:href="@{/users}">Back to list</a>
+  </div>
+</div>
+</body>
+</html>
