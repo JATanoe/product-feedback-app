@@ -11,21 +11,25 @@
     <div>
       <label for="fullName">Full Name</label>
       <input id="fullName" type="text" th:field="*{fullName}" placeholder="Enter your full name">
+      <div th:if="${#fields.hasErrors('fullName')}" th:errors="*{fullName}"></div>
     </div>
 
     <div>
       <label for="username">Username</label>
       <input id="username" type="text" th:field="*{username}" placeholder="Enter your username"/>
+      <div th:if="${#fields.hasErrors('username')}" th:errors="*{username}"></div>
     </div>
 
     <div>
       <label for="email">Email</label>
       <input id="email" type="email" th:field="*{email}" placeholder="Enter your email"/>
+      <div th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></div>
     </div>
 
     <div>
       <label for="bio">Bio</label>
       <textarea id="bio" th:field="*{bio}" placeholder="Write a small bio"></textarea>
+      <div th:if="${#fields.hasErrors('bio')}" th:errors="*{bio}"></div>
     </div>
 
     <div>

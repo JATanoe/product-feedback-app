@@ -12,11 +12,13 @@
     <p><strong>Email:</strong> <span th:text="${user.email}"></span></p>
     <p><strong>Bio:</strong> <span th:text="${user.bio}"></span></p>
 
-    <p>
+    <div>
       <a th:href="@{/users/{id}/update(id=${user.id})}">Edit</a>
-      <a th:href="@{/users/{id}/delete(id=${user.id})}">Delete</a>
+      <form th:action="@{/users/{id}/delete(id=${user.id})}" method="post" style="display:inline">
+        <button type="submit">Delete</button>
+      </form>
       <a th:href="@{/users}">Back to list</a>
-    </p>
+    </div>
   </div>
   <div th:if="${user == null}">
     <p>User not found.</p>

@@ -26,7 +26,9 @@
         <td>
           <a th:href="@{/users/{id}(id=${user.id})}">View</a>
           <a th:href="@{/users/{id}/update(id=${user.id})}">Update</a>
-          <a th:href="@{/users/{id}/delete(id=${user.id})}">Delete</a>
+          <form th:action="@{/users/{id}/delete(id=${user.id})}" method="post" style="display:inline">
+            <button type="submit">Delete</button>
+          </form>
         </td>
       </tr>
     </tbody>
